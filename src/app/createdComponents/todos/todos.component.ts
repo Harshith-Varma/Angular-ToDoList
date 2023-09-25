@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Todo } from '../../Todo';
+import { AddTodoService } from '../../app.service';
 
 @Component({
   selector: 'app-todos',
@@ -9,7 +10,7 @@ import { Todo } from '../../Todo';
 export class ToDosComponent implements OnInit {
   todoList: Todo[];
   localItems: string;
-  constructor() {
+  constructor(private addTodoService: AddTodoService) {
     this.localItems = localStorage.getItem('todoList');
     if (this.localItems == null) {
       this.todoList = [];

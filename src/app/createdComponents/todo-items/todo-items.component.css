@@ -1,0 +1,16 @@
+.btn {
+  background-color: tomato;
+  color: white;
+}
+
+.todo-title {
+  font-size: medium;
+}
+
+.todo-desc {
+  font-size: small;
+}
+
+.todo-separator {
+  border: 1px dashed;
+}
