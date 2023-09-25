@@ -8,13 +8,13 @@ import { ToDosComponent } from './createdComponents/todos/todos.component';
 import { AppComponent } from './app.component';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   declarations: [
     AppComponent,
     ToDosComponent,
     TodoItemsComponent,
     AddTodoComponent,
-    AppRoutingModule,
+    
   ],
   bootstrap: [AppComponent],
 })
