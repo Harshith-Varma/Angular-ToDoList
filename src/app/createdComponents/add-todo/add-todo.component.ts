@@ -20,5 +20,7 @@ export class AddTodoComponent implements OnInit {
     };
     this.todoAdd.emit(todo);
   }
-  ngOnInit() {}
+  ngOnInit() {
+    console.log('add-todo component has been initiated');
+  }
 }

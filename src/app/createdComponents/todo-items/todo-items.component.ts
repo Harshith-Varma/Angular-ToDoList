@@ -14,5 +14,7 @@ export class TodoItemsComponent implements OnInit {
     this.todoDelete.emit(this.todo);
     console.log('Triggered');
   }
-  ngOnInit() {}
+  ngOnInit() {
+    console.log('todo-items component has been initiated.');
+  }
 }

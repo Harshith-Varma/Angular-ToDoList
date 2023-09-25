@@ -10,8 +10,8 @@ export class ToDosComponent implements OnInit {
   todoList: Todo[];
   localItems: string;
   constructor() {
-    this.localItems = localStorage.getItem("todoList");
-    if(this.localItems == null) {
+    this.localItems = localStorage.getItem('todoList');
+    if (this.localItems == null) {
       this.todoList = [];
     } else {
       this.todoList = JSON.parse(this.localItems);
@@ -29,5 +29,7 @@ export class ToDosComponent implements OnInit {
     localStorage.setItem('todoList', JSON.stringify(this.todoList));
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log('todos.component has been initiated.');
+  }
 }
