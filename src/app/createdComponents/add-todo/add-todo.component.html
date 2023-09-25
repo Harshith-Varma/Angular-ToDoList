@@ -1,0 +1,14 @@
+<div>
+  <h4>Your To-Do's:</h4>
+  <form (ngSubmit)="onSubmitPerform()">
+    <label for="Title">Title: </label>
+    <input type="text" [(ngModel)]="title" id="title" name="title" />
+    <br /><br />
+    <label for="Description">Description: </label>
+    <input type="text" [(ngModel)]="desc" id="desc" name="desc" />
+    <br /><br />
+    <button class="btn">Accept</button>
+  </form>
+</div>
+
+<hr />
