@@ -8,7 +8,7 @@ import { NewDescriptionTwoComponent } from './createdComponents/new-description-
   imports: [
     RouterModule.forRoot([
       { path: 'description-two', component: NewDescriptionComponent },
-      {path: 'description-three', component: NewDescriptionTwoComponent}
+      { path: 'description-three', component: NewDescriptionTwoComponent },
     ]),
   ],
   exports: [RouterModule],
